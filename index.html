@@ -3,87 +3,191 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QuarkBite Space Gear</title>
-<meta name="description" content="Telescopes, books and science gifts picked by QuarkBite — science in seconds.">
+<title>QuarkBite Space Gifts</title>
+<meta name="description" content="The best space and science Christmas gifts, picked by QuarkBite: telescopes, books, moon lamps and science kits.">
+<meta property="og:title" content="Best Space Gifts for Christmas - QuarkBite">
+<meta property="og:description" content="Telescopes, moon lamps, science kits and books picked by QuarkBite.">
+<meta property="og:image" content="https://shhesh16-eng.github.io/quarkbite/logo.png">
 <link rel="icon" href="logo.png">
 <style>
-:root{--bg:#070b1a;--card:#111833;--card2:#18214a;--text:#eef2ff;--muted:#9aa6d1;--accent:#ffd34d;--line:#26315f}
+:root{--bg:#070b1a;--card:#101833;--card2:#17214a;--text:#f2f5ff;--muted:#a3aed6;--gold:#ffd34d;--red:#e63946;--green:#2a9d8f;--line:#27315e}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:radial-gradient(1200px 600px at 50% -10%,#1d2a66 0%,var(--bg) 60%) fixed,var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
-.stars{position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(1px 1px at 20% 30%,#fff8,transparent),radial-gradient(1px 1px at 70% 15%,#fff6,transparent),radial-gradient(1.5px 1.5px at 85% 60%,#fff7,transparent),radial-gradient(1px 1px at 35% 80%,#fff5,transparent),radial-gradient(1px 1px at 55% 45%,#fff4,transparent),radial-gradient(1.5px 1.5px at 10% 65%,#fff6,transparent)}
-main{position:relative;max-width:560px;margin:0 auto;padding:36px 16px 48px}
-header{text-align:center;margin-bottom:26px}
-header img{width:92px;height:92px;border-radius:50%;box-shadow:0 0 0 3px var(--line),0 0 40px #4f6bff55}
-h1{font-size:1.6rem;margin-top:12px;letter-spacing:.3px}
-.sub{color:var(--muted);margin-top:4px}
-.social{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
-.social a{color:var(--text);text-decoration:none;font-size:.85rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:#ffffff08}
-h2{font-size:.8rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin:26px 4px 10px}
-.item{display:flex;align-items:center;gap:14px;padding:14px;margin-bottom:10px;border-radius:16px;background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid var(--line);color:var(--text);text-decoration:none;transition:transform .15s,border-color .15s}
-.item:hover,.item:focus-visible{transform:translateY(-2px);border-color:var(--accent);outline:none}
-.ico{flex:0 0 52px;height:52px;border-radius:12px;display:grid;place-items:center;font-size:1.7rem;background:#ffffff10}
-.txt{flex:1;min-width:0}
-.txt b{display:block;font-size:1rem}
-.txt span{display:block;color:var(--muted);font-size:.85rem}
-.go{color:var(--accent);font-weight:700;font-size:1.2rem}
-.note{color:var(--muted);font-size:.75rem;text-align:center;margin-top:28px;line-height:1.5}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(1000px 520px at 50% -8%,#3a1424 0%,#1a1f4f 38%,var(--bg) 72%) fixed,var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;padding-bottom:84px}
+#snow{position:fixed;inset:0;pointer-events:none;z-index:0}
+main{position:relative;z-index:1;max-width:620px;margin:0 auto;padding:0 16px 40px}
+a{color:inherit}
+.topbar{position:relative;z-index:2;background:linear-gradient(90deg,#b5172b,#e63946,#b5172b);text-align:center;font-weight:700;font-size:.9rem;padding:9px 12px}
+.topbar b{color:var(--gold)}
+.hero{text-align:center;padding:26px 0 8px}
+.brand{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted);text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:50%}
+h1{font-size:clamp(1.7rem,6.5vw,2.4rem);line-height:1.12;margin:14px 0 8px}
+h1 span{color:var(--gold)}
+.lead{color:var(--muted);max-width:460px;margin:0 auto}
+.countdown{display:flex;justify-content:center;gap:8px;margin:18px 0 6px}
+.countdown div{background:#ffffff10;border:1px solid var(--line);border-radius:12px;min-width:64px;padding:8px 6px}
+.countdown b{display:block;font-size:1.5rem;font-variant-numeric:tabular-nums}
+.countdown small{color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:1px}
+.cdnote{color:var(--muted);font-size:.8rem}
+.feature{margin:22px 0 6px;border-radius:22px;padding:20px;background:linear-gradient(140deg,#1f2b66,#3a1630);border:1px solid #ffd34d55;box-shadow:0 10px 40px #0008;position:relative;overflow:hidden}
+.feature .badge{position:absolute;top:14px;right:14px}
+.feature .big{font-size:3.4rem;line-height:1}
+.feature h2{font-size:1.35rem;margin:10px 0 4px}
+.feature p{color:#d6dcf5;font-size:.95rem}
+.feature ul{list-style:none;margin:10px 0 16px;color:#d6dcf5;font-size:.9rem}
+.feature li{padding:2px 0}
+.feature li::before{content:"\2713  ";color:var(--gold);font-weight:700}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px 18px;border-radius:14px;background:linear-gradient(180deg,#ffdf6b,#f5b700);color:#1a1300;font-weight:800;font-size:1.05rem;text-decoration:none;box-shadow:0 6px 0 #b98a00,0 10px 24px #f5b70044;transition:transform .12s}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #b98a00}
+.btn.alt{background:linear-gradient(180deg,#ff5d6c,#e63946);color:#fff;box-shadow:0 6px 0 #9d1f2b,0 10px 24px #e6394644}
+.sub{font-size:.78rem;color:var(--muted);text-align:center;margin-top:8px}
+h3{font-size:.8rem;text-transform:uppercase;letter-spacing:1.6px;color:var(--gold);margin:30px 2px 10px}
+.chips{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.chip{display:flex;align-items:center;gap:10px;padding:13px;border-radius:14px;background:var(--card);border:1px solid var(--line);text-decoration:none;font-weight:600;font-size:.95rem;transition:border-color .15s,transform .15s}
+.chip:hover{border-color:var(--gold);transform:translateY(-2px)}
+.chip i{font-style:normal;font-size:1.5rem}
+.chip small{display:block;color:var(--muted);font-weight:400;font-size:.75rem}
+.grid{display:grid;gap:12px}
+.chip>span,.card>div{min-width:0}
+body{overflow-x:hidden}
+.card{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:16px;border-radius:18px;background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid var(--line);text-decoration:none;position:relative;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:var(--gold)}
+.ico{width:64px;height:64px;border-radius:16px;display:grid;place-items:center;font-size:2.1rem;background:radial-gradient(circle at 30% 30%,#ffffff22,#ffffff08)}
+.card h4{font-size:1.05rem;margin-bottom:3px;padding-right:84px}
+.card p{color:var(--muted);font-size:.86rem}
+.video{display:inline-block;margin-top:6px;font-size:.72rem;color:#9fd3ff}
+.cta{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px dashed var(--line);font-weight:800;color:var(--gold);font-size:.92rem}
+.badge{position:absolute;top:12px;right:12px;font-size:.66rem;font-weight:800;padding:4px 8px;border-radius:999px;background:var(--red);color:#fff}
+.badge.g{background:var(--green)}
+.badge.y{background:var(--gold);color:#1a1300}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:28px;text-align:center}
+.why div{background:#ffffff08;border:1px solid var(--line);border-radius:14px;padding:12px 6px;font-size:.78rem;color:var(--muted)}
+.why b{display:block;font-size:1.3rem;margin-bottom:2px}
+.social{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.social a{text-decoration:none;font-size:.85rem;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:#ffffff08}
+.note{color:var(--muted);font-size:.74rem;text-align:center;margin-top:22px;line-height:1.55}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(0deg,#070b1af2 60%,#070b1a00);display:flex;justify-content:center}
+.sticky .btn{max-width:588px;font-size:1rem;padding:13px}
+@media (prefers-reduced-motion:reduce){#snow{display:none}.card,.chip,.btn{transition:none}}
+@media (max-width:380px){.chips{grid-template-columns:1fr}.why{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="stars"></div>
+<canvas id="snow"></canvas>
+<div class="topbar" id="topbar">🎄 Christmas gift guide: <b>order early</b> so it arrives in time 🎁</div>
 <main>
-  <header>
-    <img src="logo.png" alt="QuarkBite logo">
-    <h1>QuarkBite Space Gear</h1>
-    <p class="sub">See the planets from our videos with your own eyes 🪐</p>
-    <nav class="social">
-      <a href="https://www.youtube.com/@QuarkBite" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.tiktok.com/@quarkbite" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://x.com/quarkbite1" target="_blank" rel="noopener">X</a>
-      <a href="https://www.facebook.com/profile.php?id=61596200471537" target="_blank" rel="noopener">Facebook</a>
-    </nav>
+  <header class="hero">
+    <a class="brand" href="https://www.youtube.com/@QuarkBite" target="_blank" rel="noopener"><img src="logo.png" alt="">QuarkBite · Science in seconds</a>
+    <h1 id="title">The best <span>space gifts</span><br>for Christmas 🎅</h1>
+    <p class="lead">Hand-picked gifts that let them see what our videos show: Saturn's rings, Moon craters and real science at home.</p>
+    <div class="countdown" id="cd" aria-label="Countdown to Christmas">
+      <div><b id="d">--</b><small>days</small></div><div><b id="h">--</b><small>hours</small></div><div><b id="m">--</b><small>min</small></div>
+    </div>
+    <p class="cdnote" id="cdnote">until Christmas</p>
   </header>
-  <div id="list"></div>
-  <p class="note">As an Amazon Associate I earn from qualifying purchases.<br>Links open Amazon; prices and availability are set by Amazon.</p>
+
+  <section class="feature">
+    <span class="badge y">⭐ OUR #1 PICK</span>
+    <div class="big">🔭</div>
+    <h2>A real telescope</h2>
+    <p>The gift that makes jaws drop: Saturn's rings and Jupiter's moons, seen live from the balcony.</p>
+    <ul><li>Easy beginner models, set up in minutes</li><li>Perfect for kids 8+, teens and adults</li><li>As seen in our "6 worlds" videos</li></ul>
+    <a class="btn" data-q="beginner telescope gift" href="#">See today's telescope deals →</a>
+    <p class="sub">Opens Amazon · check price &amp; delivery date there</p>
+  </section>
+
+  <h3>🎁 Shop by who it's for</h3>
+  <nav class="chips">
+    <a class="chip" data-q="space gifts for kids" href="#"><i>🧒</i><span>Kids 6–10<small>Fun &amp; hands-on</small></span></a>
+    <a class="chip" data-q="space gifts for teens" href="#"><i>🧑‍🚀</i><span>Teens<small>Cool &amp; techy</small></span></a>
+    <a class="chip" data-q="astronomy gifts for men" href="#"><i>👨</i><span>Dad &amp; him<small>Gadgets &amp; optics</small></span></a>
+    <a class="chip" data-q="space gifts for women" href="#"><i>👩</i><span>Mom &amp; her<small>Pretty &amp; cozy</small></span></a>
+  </nav>
+
+  <h3>💸 Shop by budget</h3>
+  <nav class="chips">
+    <a class="chip" data-q="space gifts" data-max="25" href="#"><i>🎈</i><span>Under $25<small>Stocking stuffers</small></span></a>
+    <a class="chip" data-q="space gifts" data-min="25" data-max="50" href="#"><i>🎀</i><span>$25 – $50<small>Great value</small></span></a>
+    <a class="chip" data-q="space gifts" data-min="50" data-max="100" href="#"><i>🎁</i><span>$50 – $100<small>Wow gifts</small></span></a>
+    <a class="chip" data-q="telescope" data-min="100" href="#"><i>💎</i><span>$100+<small>Big surprise</small></span></a>
+  </nav>
+
+  <h3>🌟 Top space gifts</h3>
+  <div class="grid" id="grid"></div>
+
+  <a class="btn alt" style="margin-top:22px" data-q="space christmas gifts" href="#">🎄 See all space Christmas gifts</a>
+
+  <div class="why">
+    <div><b>🎥</b>Picked from our videos</div>
+    <div><b>🚚</b>Shipped by Amazon</div>
+    <div><b>↩️</b>Amazon returns</div>
+  </div>
+
+  <nav class="social">
+    <a href="https://www.youtube.com/@QuarkBite" target="_blank" rel="noopener">▶ YouTube</a>
+    <a href="https://www.tiktok.com/@quarkbite" target="_blank" rel="noopener">♪ TikTok</a>
+    <a href="https://x.com/quarkbite1" target="_blank" rel="noopener">𝕏</a>
+    <a href="https://www.facebook.com/profile.php?id=61596200471537" target="_blank" rel="noopener">f Facebook</a>
+  </nav>
+  <p class="note">As an Amazon Associate I earn from qualifying purchases.<br>Links open Amazon search results; prices, availability and delivery dates are set by Amazon.</p>
 </main>
+<div class="sticky"><a class="btn" data-q="beginner telescope gift" href="#">🎁 Top gift: Telescope deals →</a></div>
+
 <script>
-// Paste your Amazon Associates tracking ID here (e.g. "quarkbite-20"). Empty = plain links.
 const TAG = "quarkbite-20";
-const sections = [
-  ["See it yourself", [
-    ["🔭","Beginner telescope","See Saturn's rings and Jupiter's moons","Celestron beginner telescope"],
-    ["🧒","Telescope for kids","Easy first telescope, great gift","telescope for kids beginners"],
-    ["🔍","Astronomy binoculars","Moon craters from your balcony","astronomy binoculars"],
-    ["🗺️","Star finder map","Find any planet in tonight's sky","planisphere star finder"]
-  ]],
-  ["Books that blow your mind", [
-    ["📘","What If?","Absurd science questions, real answers","What If Randall Munroe book"],
-    ["📗","What If? 2","More wild what-ifs","What If 2 Randall Munroe"],
-    ["🌌","Cosmos","Carl Sagan's classic","Cosmos Carl Sagan book"],
-    ["⚛️","Astrophysics for People in a Hurry","The universe in one short book","Astrophysics for People in a Hurry"]
-  ]],
-  ["Gifts & room", [
-    ["🪐","Solar system model kit","Build and paint the planets","solar system model kit"],
-    ["🚀","LEGO space sets","Rockets, rovers, stations","LEGO space set"],
-    ["🌕","3D Moon lamp","A glowing Moon for your desk","3D moon lamp"],
-    ["✨","Galaxy projector","Turn your ceiling into space","galaxy star projector"],
-    ["🧪","Science kit for kids","Real experiments at home","science experiment kit for kids"]
-  ]]
+const items = [
+  ["🌕","3D Moon lamp","Glows like the real Moon, many colors. A favorite night light for kids.","3D moon lamp gift","Kids love it","",""],
+  ["✨","Galaxy star projector","Turns any bedroom into deep space in seconds.","galaxy star projector","Cozy gift","g",""],
+  ["🔍","Astronomy binoculars","See Moon craters tonight. No setup at all.","astronomy binoculars","Easy to use","g",""],
+  ["🪐","Solar system model kit","Build and paint all the planets, glow-in-the-dark.","solar system model kit kids","Kids 6+","",""],
+  ["🚀","LEGO space sets","Rockets, rovers and space stations to build together.","LEGO space set","Top gift","",""],
+  ["🧪","Science kit for kids","Real experiments at home: crystals, volcanoes and more.","science experiment kit for kids","Ages 8–12","g",""],
+  ["📘","What If? book","Absurd science questions with real answers. Our vibe exactly.","What If Randall Munroe book","Book lovers","y",""],
+  ["🌌","Space books for kids","Beautiful picture books about planets and stars.","space books for kids","Bedtime","g",""],
+  ["🗺️","Star finder map","Find any planet in tonight's sky in seconds.","planisphere star finder","Stocking stuffer","g",""],
+  ["🧑‍🚀","Astronaut gifts","Mugs, plushies, space ice cream and more for space fans.","astronaut gifts","Fun","",""]
 ];
-const list = document.getElementById("list");
-for (const [title, items] of sections) {
-  const h = document.createElement("h2"); h.textContent = title; list.appendChild(h);
-  for (const [ico, name, desc, q] of items) {
-    const u = new URL("https://www.amazon.com/s");
-    u.searchParams.set("k", q);
-    if (TAG) u.searchParams.set("tag", TAG);
-    const a = document.createElement("a");
-    a.className = "item"; a.href = u.toString(); a.target = "_blank"; a.rel = "nofollow sponsored noopener";
-    a.innerHTML = `<div class="ico">${ico}</div><div class="txt"><b></b><span></span></div><div class="go">›</div>`;
-    a.querySelector("b").textContent = name; a.querySelector("span").textContent = desc;
-    list.appendChild(a);
-  }
+function link(q,min,max){
+  const u=new URL("https://www.amazon.com/s");u.searchParams.set("k",q);
+  if(min||max)u.searchParams.set("rh","p_36:"+(min?min*100:"")+"-"+(max?max*100:""));
+  if(TAG)u.searchParams.set("tag",TAG);return u.toString();
 }
+const grid=document.getElementById("grid");
+for(const [ico,name,desc,q,badge,cls,vid] of items){
+  const a=document.createElement("a");a.className="card";a.dataset.q=q;a.href="#";
+  a.innerHTML='<span class="badge '+cls+'"></span><div class="ico">'+ico+'</div><div><h4></h4><p></p></div><div class="cta"><span>Check price on Amazon</span><span>→</span></div>';
+  a.querySelector(".badge").textContent=badge;a.querySelector("h4").textContent=name;a.querySelector("p").textContent=desc;
+  grid.appendChild(a);
+}
+document.querySelectorAll("[data-q]").forEach(function(a){
+  a.href=link(a.dataset.q,+a.dataset.min||0,+a.dataset.max||0);
+  a.target="_blank";a.rel="nofollow sponsored noopener";
+});
+(function(){
+  var now=new Date(),y=now.getFullYear(),xmas=new Date(y,11,25);
+  if(now>new Date(y,11,26)||now.getMonth()<10){
+    document.getElementById("cd").style.display="none";document.getElementById("cdnote").style.display="none";
+    document.getElementById("topbar").textContent="🔭 Space gifts for every star-gazer";
+    document.getElementById("title").innerHTML='The best <span>space gifts</span><br>for curious minds 🚀';return;
+  }
+  var pad=function(n){return String(n).padStart(2,"0")};
+  function tick(){var s=Math.max(0,(xmas-new Date())/1000);
+    document.getElementById("d").textContent=Math.floor(s/86400);
+    document.getElementById("h").textContent=pad(Math.floor(s%86400/3600));
+    document.getElementById("m").textContent=pad(Math.floor(s%3600/60));}
+  tick();setInterval(tick,30000);
+})();
+(function(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  var c=document.getElementById("snow"),x=c.getContext("2d"),W,H,f=[];
+  function size(){W=c.width=innerWidth;H=c.height=innerHeight;}size();addEventListener("resize",size);
+  for(var i=0;i<70;i++)f.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2+.6,s:Math.random()*.6+.25,w:Math.random()*6.28});
+  (function loop(){x.clearRect(0,0,W,H);x.fillStyle="rgba(255,255,255,.75)";
+    for(var j=0;j<f.length;j++){var p=f[j];p.y+=p.s;p.w+=.01;p.x+=Math.sin(p.w)*.3;if(p.y>H){p.y=-4;p.x=Math.random()*W;}
+      x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill();}
+    requestAnimationFrame(loop);})();
+})();
 </script>
 </body>
 </html>
