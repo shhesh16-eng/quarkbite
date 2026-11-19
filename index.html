@@ -48,6 +48,10 @@ h3{font-size:.8rem;text-transform:uppercase;letter-spacing:1.6px;color:var(--gol
 .chip:hover{border-color:var(--gold);transform:translateY(-2px)}
 .chip i{font-style:normal;font-size:1.5rem}
 .chip small{display:block;color:var(--muted);font-weight:400;font-size:.75rem}
+.who-title{text-align:center;font-size:1rem;margin-top:22px}
+.who .chip{flex-direction:column;justify-content:center;text-align:center;gap:6px;padding:20px 10px;min-height:150px;font-size:1.2rem;border-radius:20px;background:linear-gradient(160deg,#1c2760,#2c1530);border-color:#ffd34d44}
+.who .chip i{font-size:3rem;line-height:1}
+.who .chip small{font-size:.85rem;margin-top:2px}
 .grid{display:grid;gap:12px}
 .chip>span,.card>div{min-width:0}
 body{overflow-x:hidden}
@@ -87,6 +91,14 @@ body{overflow-x:hidden}
     <p class="cdnote" id="cdnote">until Christmas</p>
   </header>
 
+  <h3 class="who-title">🎁 Who are you shopping for?</h3>
+  <nav class="chips who">
+    <a class="chip" data-q="space gifts for kids" href="#"><i>🧒</i><span>Kids 6–10<small>Fun &amp; hands-on</small></span></a>
+    <a class="chip" data-q="space gifts for teens" href="#"><i>🧑‍🚀</i><span>Teens<small>Cool &amp; techy</small></span></a>
+    <a class="chip" data-q="astronomy gifts for men" href="#"><i>👨</i><span>Dad &amp; him<small>Gadgets &amp; optics</small></span></a>
+    <a class="chip" data-q="space gifts for women" href="#"><i>👩</i><span>Mom &amp; her<small>Pretty &amp; cozy</small></span></a>
+  </nav>
+
   <section class="feature">
     <span class="badge y">⭐ OUR #1 PICK</span>
     <div class="big">🔭</div>
@@ -96,14 +108,6 @@ body{overflow-x:hidden}
     <a class="btn" data-q="beginner telescope gift" href="#">See today's telescope deals →</a>
     <p class="sub">Opens Amazon · check price &amp; delivery date there</p>
   </section>
-
-  <h3>🎁 Shop by who it's for</h3>
-  <nav class="chips">
-    <a class="chip" data-q="space gifts for kids" href="#"><i>🧒</i><span>Kids 6–10<small>Fun &amp; hands-on</small></span></a>
-    <a class="chip" data-q="space gifts for teens" href="#"><i>🧑‍🚀</i><span>Teens<small>Cool &amp; techy</small></span></a>
-    <a class="chip" data-q="astronomy gifts for men" href="#"><i>👨</i><span>Dad &amp; him<small>Gadgets &amp; optics</small></span></a>
-    <a class="chip" data-q="space gifts for women" href="#"><i>👩</i><span>Mom &amp; her<small>Pretty &amp; cozy</small></span></a>
-  </nav>
 
   <h3>💸 Shop by budget</h3>
   <nav class="chips">
