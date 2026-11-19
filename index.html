@@ -77,7 +77,11 @@ body{overflow-x:hidden}
 .social a{text-decoration:none;font-size:.85rem;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:#ffffff08}
 .note{color:var(--muted);font-size:.74rem;text-align:center;margin-top:22px;line-height:1.55}
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(0deg,#070b1af2 60%,#070b1a00);display:flex;justify-content:center}
-.sticky .btn{max-width:588px;font-size:1rem;padding:13px}
+.sticky{gap:8px}
+.sticky .btn{max-width:532px;font-size:1rem;padding:13px}
+.kofi-fab{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:5px;padding:0 13px;border-radius:14px;background:#ffffff14;border:1px solid #ffffff33;color:#fff;font-size:.82rem;font-weight:700;text-decoration:none}
+.kofi-fab:hover{background:#ffffff26}
+@media (max-width:380px){.kofi-fab span{display:none}}
 @media (prefers-reduced-motion:reduce){#snow{display:none}.card,.chip,.btn{transition:none}}
 @media (max-width:380px){.chips{grid-template-columns:1fr}.why{grid-template-columns:1fr}}
 </style>
@@ -161,7 +165,7 @@ body{overflow-x:hidden}
   </nav>
   <p class="note">As an Amazon Associate I earn from qualifying purchases. We may also earn a commission from AliExpress links.<br>Links open Amazon or AliExpress search results; prices, availability and delivery dates are set by those stores.</p>
 </main>
-<div class="sticky"><a class="btn" data-q="beginner telescope gift" href="#">🎁 Top gift: Telescope deals →</a></div>
+<div class="sticky"><a class="btn" data-q="beginner telescope gift" href="#">🎁 Top gift: Telescope deals →</a><a class="kofi-fab" href="https://ko-fi.com/quarkbite" target="_blank" rel="noopener" aria-label="Support QuarkBite on Ko-fi">☕<span>Support</span></a></div>
 
 <script>
 const TAG = "quarkbite-20";
