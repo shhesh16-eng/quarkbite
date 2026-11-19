@@ -19,6 +19,8 @@ main{position:relative;z-index:1;max-width:620px;margin:0 auto;padding:0 16px 40
 a{color:inherit}
 .topbar{position:relative;z-index:2;background:linear-gradient(90deg,#b5172b,#e63946,#b5172b);text-align:center;font-weight:700;font-size:.9rem;padding:9px 12px}
 .topbar b{color:var(--gold)}
+a.topbar{display:block;text-decoration:none;color:#fff}
+.card.free{border-color:#2a9d8f88;background:linear-gradient(135deg,#0f2a33,#17214a)}
 .hero{text-align:center;padding:26px 0 8px}
 .brand{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted);text-decoration:none}
 .brand img{width:30px;height:30px;border-radius:50%}
@@ -79,7 +81,7 @@ body{overflow-x:hidden}
 </head>
 <body>
 <canvas id="snow"></canvas>
-<div class="topbar" id="topbar">🎄 Christmas gift guide: <b>order early</b> so it arrives in time 🎁</div>
+<a class="topbar" id="topbar" href="https://www.amazon.com/prime?tag=quarkbite-20" target="_blank" rel="nofollow sponsored noopener">🚚 Gifts by Christmas: <b>try Prime free</b> for fast delivery →</a>
 <main>
   <header class="hero">
     <a class="brand" href="https://www.youtube.com/@QuarkBite" target="_blank" rel="noopener"><img src="logo.png" alt="">QuarkBite · Science in seconds</a>
@@ -108,6 +110,12 @@ body{overflow-x:hidden}
     <a class="btn" data-q="beginner telescope gift" href="#">See today's telescope deals →</a>
     <p class="sub">Opens Amazon · check price &amp; delivery date there</p>
   </section>
+
+  <h3>🎁 Free extras</h3>
+  <div class="grid">
+    <a class="card free" href="https://www.amazon.com/prime?tag=quarkbite-20" target="_blank" rel="nofollow sponsored noopener"><span class="badge">FREE TRIAL</span><div class="ico">🚚</div><div><h4>Amazon Prime</h4><p>Fast free delivery so your gifts arrive before Christmas, plus Prime Video.</p></div><div class="cta"><span>Start free trial</span><span>→</span></div></a>
+    <a class="card free" href="https://www.amazon.com/hz/audible/mlp?tag=quarkbite-20" target="_blank" rel="nofollow sponsored noopener"><span class="badge g">FREE TRIAL</span><div class="ico">🎧</div><div><h4>Audible: space audiobooks</h4><p>Listen to the universe: Cosmos, Brief History of Time and more, free to start.</p></div><div class="cta"><span>Try Audible free</span><span>→</span></div></a>
+  </div>
 
   <h3>💸 Shop by budget</h3>
   <nav class="chips">
@@ -172,7 +180,7 @@ document.querySelectorAll("[data-q]").forEach(function(a){
   var now=new Date(),y=now.getFullYear(),xmas=new Date(y,11,25);
   if(now>new Date(y,11,26)||now.getMonth()<10){
     document.getElementById("cd").style.display="none";document.getElementById("cdnote").style.display="none";
-    document.getElementById("topbar").textContent="🔭 Space gifts for every star-gazer";
+    document.getElementById("topbar").innerHTML="🚚 <b>Try Prime free</b>: fast delivery on space gifts →";
     document.getElementById("title").innerHTML='The best <span>space gifts</span><br>for curious minds 🚀';return;
   }
   var pad=function(n){return String(n).padStart(2,"0")};
