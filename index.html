@@ -50,6 +50,8 @@ h3{font-size:.8rem;text-transform:uppercase;letter-spacing:1.6px;color:var(--gol
 .chip:hover{border-color:var(--gold);transform:translateY(-2px)}
 .chip i{font-style:normal;font-size:1.5rem}
 .chip small{display:block;color:var(--muted);font-weight:400;font-size:.75rem}
+.alinote{color:var(--muted);font-size:.82rem;margin:-4px 2px 10px}
+.ali .chip{border-color:#e6394655}
 .who-title{text-align:center;font-size:1rem;margin-top:22px}
 .who .chip{flex-direction:column;justify-content:center;text-align:center;gap:6px;padding:20px 10px;min-height:150px;font-size:1.2rem;border-radius:20px;background:linear-gradient(160deg,#1c2760,#2c1530);border-color:#ffd34d44}
 .who .chip i{font-size:3rem;line-height:1}
@@ -130,6 +132,18 @@ body{overflow-x:hidden}
 
   <a class="btn alt" style="margin-top:22px" data-q="space christmas gifts" href="#">🎄 See all space Christmas gifts</a>
 
+  <h3 id="ali">🌏 Outside the US? Budget picks on AliExpress</h3>
+  <p class="alinote">Ships to most countries, low prices. Delivery can take 1–3 weeks, so order early.</p>
+  <nav class="chips ali">
+    <a class="chip" href="https://s.click.aliexpress.com/e/_c3t21Hat"><i>🌕</i><span>Moon lamps</span></a>
+    <a class="chip" href="https://s.click.aliexpress.com/e/_c3OaHiV7"><i>✨</i><span>Galaxy projectors</span></a>
+    <a class="chip" href="https://s.click.aliexpress.com/e/_c4ougquv"><i>🔭</i><span>Telescopes</span></a>
+    <a class="chip" href="https://s.click.aliexpress.com/e/_c4oQkaTP"><i>🧒</i><span>Kids telescopes</span></a>
+    <a class="chip" href="https://s.click.aliexpress.com/e/_c4bdoCzF"><i>🔍</i><span>Binoculars</span></a>
+    <a class="chip" href="https://s.click.aliexpress.com/e/_c4U4hU9j"><i>🪐</i><span>Solar system models</span></a>
+    <a class="chip" href="https://s.click.aliexpress.com/e/_c3qY7U53"><i>🧑‍🚀</i><span>Astronaut lights</span></a>
+  </nav>
+
   <div class="why">
     <div><b>🎥</b>Picked from our videos</div>
     <div><b>🚚</b>Shipped by Amazon</div>
@@ -142,7 +156,7 @@ body{overflow-x:hidden}
     <a href="https://x.com/quarkbite1" target="_blank" rel="noopener">𝕏</a>
     <a href="https://www.facebook.com/profile.php?id=61596200471537" target="_blank" rel="noopener">f Facebook</a>
   </nav>
-  <p class="note">As an Amazon Associate I earn from qualifying purchases.<br>Links open Amazon search results; prices, availability and delivery dates are set by Amazon.</p>
+  <p class="note">As an Amazon Associate I earn from qualifying purchases. We may also earn a commission from AliExpress links.<br>Links open Amazon or AliExpress search results; prices, availability and delivery dates are set by those stores.</p>
 </main>
 <div class="sticky"><a class="btn" data-q="beginner telescope gift" href="#">🎁 Top gift: Telescope deals →</a></div>
 
@@ -172,6 +186,7 @@ for(const [ico,name,desc,q,badge,cls,vid] of items){
   a.querySelector(".badge").textContent=badge;a.querySelector("h4").textContent=name;a.querySelector("p").textContent=desc;
   grid.appendChild(a);
 }
+document.querySelectorAll(".ali a").forEach(function(a){a.target="_blank";a.rel="nofollow sponsored noopener";});
 document.querySelectorAll("[data-q]").forEach(function(a){
   a.href=link(a.dataset.q,+a.dataset.min||0,+a.dataset.max||0);
   a.target="_blank";a.rel="nofollow sponsored noopener";
